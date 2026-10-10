@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnterpriseSync Core™ — Production-Grade Fullstack Boilerplate</title>
+  <meta name="description" content="Production-ready fullstack starter kit bridging NestJS 10, PostgreSQL 16, and Flutter 3.38 with BLoC & Clean Architecture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">EnterpriseSync<strong>Core</strong></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#tech-stack">Tech Stack</a>
+        <a href="#quickstart">Quickstart</a>
+      </nav>
+      <div class="nav-cta">
+        <span class="badge-status"><span class="pulse-dot"></span> Ready for Acquisition</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span>🚀 PRODUCTION-GRADE FULLSTACK BOILERPLATE</span>
+      </div>
+      <h1 class="hero-title">
+        Build Enterprise B2B SaaS & Mobile Apps <span class="gradient-text">in Days, Not Months</span>
+      </h1>
+      <p class="hero-subtitle">
+        A battle-tested fullstack system bridging a modular <strong>NestJS 10 API</strong> with an offline-first <strong>Flutter 3.38</strong> mobile client built on Clean Architecture, BLoC state machines, and hardware-backed Keystore security.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#features" class="btn btn-primary">Explore Features</a>
+        <a href="#architecture" class="btn btn-secondary">View System Architecture</a>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="metrics-strip">
+        <div class="metric-item">
+          <div class="metric-value">180+ hrs</div>
+          <div class="metric-label">Senior Dev Time Saved</div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <div class="metric-value">30 sec</div>
+          <div class="metric-label">Zero-Config Local Boot</div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <div class="metric-value">0 Warnings</div>
+          <div class="metric-label">Flutter Analyze Clean</div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <div class="metric-value">100%</div>
+          <div class="metric-label">Full IP Transfer Included</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Grid -->
+  <section id="tech-stack" class="section tech-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ENGINEERED FOR SCALE</span>
+        <h2>Enterprise-Grade Technology Stack</h2>
+        <p>Zero toy dependencies. Every framework and library was selected for production performance and maintainability.</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon nest">⚡</div>
+          <h3>NestJS 10 REST API</h3>
+          <p>Modular architecture, global validation pipes, unified exception filters, and JWT session lifecycle guards.</p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon flutter">📱</div>
+          <h3>Flutter 3.38 + BLoC 9.1</h3>
+          <p>Unidirectional data flow, reactive state machines, responsive Material 3 layout, and animated transitions.</p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon clean">🏛️</div>
+          <h3>Clean Architecture</h3>
+          <p>Strict decoupling across Domain (Entities & UseCases), Data (Dio & Storage), and Presentation layers.</p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon db">🗄️</div>
+          <h3>Dual Database Strategy</h3>
+          <p>Zero-dependency embedded SQLite for instant local previews + Dockerized PostgreSQL 16 Alpine for production.</p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon security">🔒</div>
+          <h3>Hardware Keystore Security</h3>
+          <p>Android <code>EncryptedSharedPreferences</code> & iOS <code>Keychain</code> hardware encryption for token persistence.</p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon sync">🔄</div>
+          <h3>Idempotent Outbox Sync</h3>
+          <p>Client-generated UUIDv4 mutation tracking ensuring zero duplicate records during intermittent mobile connectivity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Architecture Features -->
+  <section id="features" class="section features-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CORE CAPABILITIES</span>
+        <h2>Features That Set It Apart</h2>
+      </div>
+
+      <div class="features-layout">
+        <div class="feature-box">
+          <div class="feature-number">01</div>
+          <h3>Transactional Outbox Pattern</h3>
+          <p>Mobile field operations and low-signal environments need bulletproof synchronization. Every transaction carries an idempotent <code>clientMutationId</code>, cached server-side to guarantee seamless reconnections without duplicate mutations.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-number">02</div>
+          <h3>Google Sign-In with Cryptographic Verification</h3>
+          <p>Authenticates Google ID tokens through official <code>google-auth-library</code> endpoints, verifying RSA signatures cryptographically before issuing enterprise JWT session pairs.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-number">03</div>
+          <h3>Database-Backed Session Revocation</h3>
+          <p>Token pairs are backed by PostgreSQL/SQLite sessions. If a device is compromised, admins can instantly revoke individual sessions via <code>/api/v1/sessions/:id</code> or wipe all devices globally.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-number">04</div>
+          <h3>Interactive Swagger OpenAPI 3.0</h3>
+          <p>Self-documenting interactive API console ready out-of-the-box at <code>/docs</code> with Bearer JWT test headers for instant backend exploration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Overview -->
+  <section id="architecture" class="section architecture-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">SYSTEM BLUEPRINT</span>
+        <h2>End-to-End Architectural Flow</h2>
+      </div>
+
+      <div class="arch-card">
+        <div class="arch-layer">
+          <div class="arch-badge">📱 Mobile Layer (Flutter)</div>
+          <div class="arch-desc">Presentation (BLoC) ➔ Domain (Entities, UseCases) ➔ Data (Dio, Secure Storage)</div>
+        </div>
+        <div class="arch-arrow">⬇ Bearer JWT / HTTPS / Idempotent Outbox Sync</div>
+        <div class="arch-layer">
+          <div class="arch-badge">⚡ Backend API Layer (NestJS)</div>
+          <div class="arch-desc">ValidationPipe ➔ Auth & Google Modules ➔ Outbox Engine ➔ Sessions & RBAC</div>
+        </div>
+        <div class="arch-arrow">⬇ TypeORM Data Mapper</div>
+        <div class="arch-layer">
+          <div class="arch-badge">🗄️ Database Layer (TypeORM)</div>
+          <div class="arch-desc">PostgreSQL 16 Alpine (Docker) / Embedded SQLite (Zero Config)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quickstart Demonstration -->
+  <section id="quickstart" class="section quickstart-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">EVALUATE IN SECONDS</span>
+        <h2>Zero-Friction Quickstart</h2>
+        <p>No waiting on database setups. Run and test immediately on any machine.</p>
+      </div>
+
+      <div class="code-terminal">
+        <div class="terminal-header">
+          <div class="terminal-dot red"></div>
+          <div class="terminal-dot yellow"></div>
+          <div class="terminal-dot green"></div>
+          <span class="terminal-title">bash — enterprise-nestjs-api</span>
+        </div>
+        <div class="terminal-body">
+          <pre><code><span class="code-comment"># 1. Start backend with zero-config embedded SQLite</span>
+cd enterprise-nestjs-api
+npm install
+npm run seed
+npm run start:dev
+
+<span class="code-comment"># 2. Run cross-platform Flutter client</span>
+cd ../enterprise_flutter_app
+flutter pub get
+flutter run -d chrome</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & Acquisition Notice -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="logo">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">EnterpriseSync<strong>Core</strong></span>
+        </div>
+        <p>Production-ready digital asset and software starter kit for modern founders and dev agencies.</p>
+      </div>
+      <div class="footer-right">
+        <div class="acquisition-box">
+          <h4>Asset Acquisition & Inquiries</h4>
+          <p>Available for acquisition with 100% intellectual property transfer, code repository, and developer onboarding.</p>
+          <a href="https://github.com/CJRSantos" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Developer Profile (GitHub)</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 EnterpriseSync Core. Created by CJRSantos. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
